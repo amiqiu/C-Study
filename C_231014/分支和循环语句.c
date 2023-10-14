@@ -3,6 +3,50 @@
 
 //int main()
 //{
+//	int num = 0;
+//	scanf("%d", &num);
+//	if (num == 0)
+//	{
+//		printf("输入数字是0\n");
+//	}
+//	else
+//	{
+//		if (num > 0)
+//		{
+//			printf("输入数字大于0\n");
+//		}
+//		else
+//		{
+//			printf("输入数字小于0\n");
+//		}
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int num = 0;
+//	scanf("%d", &num);
+//	if (num > 0)
+//	{
+//		if (num % 2 == 0)
+//		{
+//			printf("偶数\n");
+//		}
+//		else
+//		{
+//			printf("奇数\n");
+//		}
+//	}
+//	else
+//	{
+//		printf("负数\n");
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
 //	int age = 0;
 //	scanf("%d", &age);
 //	if (age < 18)
@@ -27,12 +71,13 @@
 //				{
 //					printf("老年");
 //				}
+//				else
+//					printf("老寿星");
 //			}
 //		}
 //	}
 //	return 0;
 //}
-
 
 //int main()
 //{
