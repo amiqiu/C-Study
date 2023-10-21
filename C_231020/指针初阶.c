@@ -250,13 +250,59 @@
 //	}
 //	return 0;
 //}
+//
+//int main()
+//{
+//	int a = 10;
+//	int* p = &a;//一级指针变量，指针变量也是变量，
+//	//变量是在内存中开辟空间的，是变量就有地址
+//	int** pp = &p;//二级指针变量，存放一级变量的地址
+//	*(*pp) = 100;//**pp = 100;
+//	printf("%d\n", a);
+//
+//	return 0;
+//}
+//
 
+
+//指针数组
+// 指针数字是数组。是存放指针的数组
+//
+//int main()
+//{
+//	char arr1[] = "abcdef";
+//	char arr2[] = "hello world";
+//	char arr3[] = "cuihua";
+//
+//	char* parr[] = { arr1,arr2,arr3 };
+//
+//	char** p = parr;
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("%s\n", parr[i]);
+//	}
+//	return 0;
+//}
+//
 int main()
 {
-	int a = 10;
-	int* p = &a;//一级指针变量，指针变量也是变量，
-	//变量是在内存中开辟空间的，是变量就有地址
-	int** pp = &p;//二级指针变量，存放一级变量的地址
+	int arr1[] = { 1,2,3,4,5 };
+	int arr2[] = { 2,3,4,5,6 };
+	int arr3[] = { 3,4,5,6,7 };
+	//指针数组
+	int* parr[] = { arr1,arr2,arr3 };
+	int i = 0;
+	for (i = 0; i < 3; i++)
+	{
+		int j = 0;
+		for (j = 0; j < 5; j++)
+		{
+			printf("%d ", *(parr[i]+j));
+			//printf("%d ", parr[i][j]);
+		}
+		printf("\n");
+	}
 
 	return 0;
 }
