@@ -85,17 +85,17 @@
 //	return 0;
 //}
 
-int Func(int n)
-{
-	if (n < 10)
-	{
-		return n;
-	}
-	return n % 10 + Func(n / 10);
-}
-
-int main()
-{
-	printf("%d\n", Func(123));
-	return 0;
-}
+//int Func(int n)
+//{
+//	if (n < 10)
+//	{
+//		return n;
+//	}
+//	return n % 10 + Func(n / 10);
+//}
+//
+//int main()
+//{
+//	printf("%d\n", Func(123));
+//	return 0;
+//}
